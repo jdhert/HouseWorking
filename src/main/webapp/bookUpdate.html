@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>도서 업데이트!!</title>
+</head>
+<body>
+<h1>도서업데이트 페이지</h1>
+<script>
+    var value = localStorage.getItem("keys");
+</script>
+<form action="book-update" method="get">
+    <input type="hidden" name="key" value="" id="value">
+    <label for = "BN">업데이트할 도서명 : </label>
+    <input type = "text" name = "bookName1" id = "BN">
+    <br>
+    <label for = "at">업데이트할 저자 : </label>
+    <input type = "text" name = "author1" id = "at">
+    <br>
+    <label for = "publish">업데이트할 출간일 : </label>
+    <input type = "date" name = "publishDate1" id = "publish">
+    <br>
+    <input type = "submit" value = "등록">
+</form>
+</body>
+</html>
